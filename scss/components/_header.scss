@@ -14,24 +14,21 @@ header {
     &:hover {
       width: 30px;
     }
-
-    /* @@@@ MEDIA QUERY SMALL TABLET */
-    @media screen and (min-width: 576px) {
-      width: 35px;
-
-      &:hover {
-        width: 40px;
-      }
-    }
   }
 }
 
 .header-logo {
+  h1 {
+    transition: 0.5s;
+    font-size: medium;
+  }
+
   img {
+    width: 30px;
     transition: 0.5s;
 
     &:hover {
-      width: 50px;
+      width: 35px;
     }
   }
 }

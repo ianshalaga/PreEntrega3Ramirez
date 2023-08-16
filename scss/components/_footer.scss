@@ -1,5 +1,6 @@
 footer {
-  background-color: $color-ss-dark;
+  // background-color: $color-ss-dark;
+  background: linear-gradient(to right, $color-ss-dark, $color-ss-dark-hover);
   padding-bottom: 70px;
 
   a {
@@ -9,11 +10,6 @@ footer {
 
   p {
     font-size: smaller;
-  }
-
-  /* @@@@ MEDIA QUERY DESKTOP */
-  @media screen and (min-width: 992px) {
-    padding-bottom: 0;
   }
 }
 

@@ -10,11 +10,6 @@ body {
 main {
   padding-top: 70px;
   min-height: 80vh;
-
-  /* @@@@ MEDIA QUERY DESKTOP */
-  @media screen and (min-width: 992px) {
-    min-height: 91.5vh;
-  }
 }
 
 section {
@@ -39,16 +34,6 @@ strong {
 .main-img {
   img {
     border-radius: 100%;
-
-    /* @@@@ MEDIA QUERY SMALL TABLET */
-    @media screen and (min-width: 576px) {
-      width: 50%;
-    }
-
-    /* @@@@ MEDIA QUERY DESKTOP */
-    @media screen and (min-width: 992px) {
-      width: 85%;
-    }
   }
 }
 
@@ -58,15 +43,6 @@ strong {
 
     &:hover {
       background-color: $color-ss-dark-hover;
-    }
-  }
-}
-
-/* @@@@ MEDIA QUERY DESKTOP */
-@media screen and (min-width: 992px) {
-  .cards {
-    section {
-      height: 35em;
     }
   }
 }

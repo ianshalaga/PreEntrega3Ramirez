@@ -4,11 +4,6 @@
 
 .min-content {
   width: fit-content;
-
-  /* @@@@ MEDIA QUERY DESKTOP */
-  @media screen and (min-width: 992px) {
-    width: min-content;
-  }
 }
 
 .min-width {
@@ -20,11 +15,6 @@
 
   li {
     @include max-width;
-
-    /* @@@@ MEDIA QUERY DESKTOP */
-    @media screen and (min-width: 992px) {
-      width: fit-content;
-    }
   }
 }
 
@@ -48,4 +38,8 @@
 
 .page-title {
   color: $color-ss-white;
+}
+
+.background-link-color {
+  background-color: $color-ss-dark-hover;
 }
