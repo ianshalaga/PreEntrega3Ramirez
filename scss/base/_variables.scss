@@ -2,9 +2,10 @@
 $font-family: "Gontserrat medium";
 
 @font-face {
-    font-family: $font-family;
-    src: url(../assets/fonts/Gontserrat-Medium.ttf);
-  }
+  font-family: $font-family;
+  src: url(../assets/fonts/Gontserrat-Medium.ttf);
+  font-display: swap;
+}
 
 // Colors
 $color-ss-green: #20bf55;
