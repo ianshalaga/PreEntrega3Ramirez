@@ -3,7 +3,7 @@
 }
 
 .min-content {
-  width: fit-content;
+  @include adjust-content(fit-content, _);
 }
 
 .min-width {
@@ -32,14 +32,11 @@
 
 .border-tb-green {
   // Border top bottom green
-  border-top: 1px solid $color-ss-green;
-  border-bottom: 1px solid $color-ss-green;
+  @extend .border-green;
+  border-left: none;
+  border-right: none;
 }
 
 .page-title {
   color: $color-ss-white;
-}
-
-.background-link-color {
-  background-color: $color-ss-dark-hover;
 }

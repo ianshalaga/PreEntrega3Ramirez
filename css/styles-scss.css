@@ -20,6 +20,7 @@
 
 .min-content {
   width: fit-content;
+  height: _;
 }
 
 .min-width {
@@ -40,21 +41,17 @@
   height: 100%;
 }
 
-.border-green {
+.border-green, .border-tb-green {
   border: 1px solid #20bf55;
 }
 
 .border-tb-green {
-  border-top: 1px solid #20bf55;
-  border-bottom: 1px solid #20bf55;
+  border-left: none;
+  border-right: none;
 }
 
 .page-title {
   color: bisque;
-}
-
-.background-link-color {
-  background-color: #434859;
 }
 
 header {
