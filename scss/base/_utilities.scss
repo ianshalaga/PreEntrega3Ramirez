@@ -1,0 +1,51 @@
+.fit-content {
+  @include adjust-content(fit-content, fit-content);
+}
+
+.min-content {
+  width: fit-content;
+
+  /* @@@@ MEDIA QUERY DESKTOP */
+  @media screen and (min-width: 992px) {
+    width: min-content;
+  }
+}
+
+.min-width {
+  @include min-width;
+}
+
+.max-width {
+  @include max-width;
+
+  li {
+    @include max-width;
+
+    /* @@@@ MEDIA QUERY DESKTOP */
+    @media screen and (min-width: 992px) {
+      width: fit-content;
+    }
+  }
+}
+
+.max-height {
+  @include max-height;
+
+  li {
+    @include max-height;
+  }
+}
+
+.border-green {
+  border: 1px solid $color-ss-green;
+}
+
+.border-tb-green {
+  // Border top bottom green
+  border-top: 1px solid $color-ss-green;
+  border-bottom: 1px solid $color-ss-green;
+}
+
+.page-title {
+  color: $color-ss-white;
+}

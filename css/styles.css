@@ -1,0 +1,195 @@
+/* COLORES */
+/* Cardinal c52233 */
+/* Dark pastel green 20bf55 */
+/* Misty rose ffd9da */
+/* Gunmetal 30343f */
+/* Eerie black 1b2021 */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* FUENTE */
+@font-face {
+    font-family: "Gontserrat medium";
+    src: url(../assets/fonts/Gontserrat-Medium.ttf);
+}
+
+/* TAG DECORATORS */
+/* Header */
+header * {
+    display: inline;
+    vertical-align: middle;
+}
+
+header {
+    position: fixed;
+    background-color: #30343f;
+    width: 100%;
+    height: 6%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #30343f;
+    border-bottom: 1px solid #30343f;
+}
+
+header img {
+    width: 35px;
+}
+
+header h1, header a {
+    color: #20bf55;
+}
+
+/* Body */
+body, html {
+    height: 86.5%;
+}
+
+body {
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: "Gontserrat medium";
+    background-color: #c5223380; 
+    /* background: linear-gradient(90deg, #c5223380 0%, #ffd9da 50%, rgb(32, 191, 85, 0.5) 100%); */
+}
+
+/* Footer */
+footer {
+    background-color: #30343f;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: small;
+    margin-top: 25px;
+}
+
+footer p {
+    color: #20bf55;
+    text-align: center;
+}
+
+footer a {
+    color: #ffd9da;
+}
+
+/* Main */
+main {
+    padding-top: 90px;
+    /* margin-top: 115px; */
+    min-height: 100%;
+    text-align: center;
+}
+
+main p {
+    text-align: justify;
+}
+
+main a {
+    color: #30343f;
+}
+
+main h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #1b2021;
+}
+
+main li {
+    display: inline;
+}
+
+main iframe {
+    width: 480px;
+    height: 270px;
+    border: 5px outset #c52233;
+}
+
+label {
+    display: block;
+}
+
+/* CLASS DECORATORS */
+.logo-padding {
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.nav-middle {
+    position: absolute;
+    left: 32%;
+    padding-top: 9px;
+}
+
+.social-links {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    padding-top: 4px;
+}
+
+.padding-right-left {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.padding-top-bottom {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.padding-bottom {
+    padding-bottom: 10px;
+}
+
+.card {
+    display: inline-block;
+    position: absolute;
+}
+
+.card-left {
+    left: 6.25%;
+    top: 20%;
+    width: 25%;
+}
+
+.card-center {
+    left: 37.5%;
+    top: 20%;
+    width: 25%;
+}
+
+.card-right {
+    right: 6.25%;
+    top: 20%;
+    width: 25%;
+}
+
+.card img {
+    width: 300px;
+    border-radius: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.buttom {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 4px;
+    border: 2px solid black;
+    background-color: #30343f;
+    color: #20bf55;
+    width: 60px;
+}
+
+.footer-logo {
+    width: 12px;
+    border-radius: 100%;
+}

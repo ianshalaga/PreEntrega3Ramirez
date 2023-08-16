@@ -1,0 +1,423 @@
+/* MOBILE @@@@ */
+@font-face {
+  font-family: "Gontserrat medium";
+  src: url(../assets/fonts/Gontserrat-Medium.ttf);
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Gontserrat medium";
+  color: #fbfdea;
+}
+
+/* LAYOUT GRID DEFINITION */
+.layout-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(3, auto); */
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  min-height: 100vh;
+  height: 100%;
+}
+
+.layout-item-header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+}
+
+.layout-item-main {
+  grid-area: main;
+  gap: 1em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layout-item-footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+/* TAG DECORATORS */
+body {
+  background-color: #a52422;
+  background-image: url(../assets/images/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+header * {
+  display: inline;
+  vertical-align: middle;
+}
+
+header {
+  background-color: #242730;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  border-bottom: 1px solid #20bf55;
+  border-top: 1px solid #20bf55;
+}
+
+header img {
+  width: 2em;
+}
+
+header h1,
+header a,
+nav a,
+nav p {
+  color: #22cd5b;
+}
+
+nav {
+  background-color: #242730;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  min-height: 54px;
+  font-size: smaller;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav ul li {
+  display: flex;
+  min-height: 54px;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #20bf55;
+  border-bottom: 1px solid #20bf55;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+nav ul li a {
+  width: 100%;
+  height: 100%;
+}
+
+nav ul li a p {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+nav ul li a img {
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+}
+
+/* nav li:hover {
+  background-color: #363b48;
+} */
+
+a:hover {
+  background-color: #363b48;
+}
+
+main {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 45px;
+}
+
+main a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+main iframe {
+  border: 5px outset #f2f7f2;
+}
+
+main section a {
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 2em;
+  width: 100%;
+}
+
+form input {
+  color: black;
+}
+
+form textarea {
+  color: black;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #242730;
+  /* padding: 10px; */
+  /* border-radius: 2%; */
+  border: 1px double #20bf55;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* section:hover {
+  background-color: #363b48;
+} */
+
+section * {
+  color: #20bf55;
+}
+
+section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+section a {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+footer {
+  background-color: #242730;
+  margin-bottom: 54px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #20bf55;
+  border-top: 1px solid #20bf55;
+}
+
+footer p {
+  color: #22cd5b;
+  text-align: center;
+}
+
+footer a {
+  color: #fbfdea;
+}
+
+/* CLASS DECORATORS */
+.section-order-1 {
+  order: 1;
+}
+
+.section-order-2 {
+  order: 2;
+}
+
+.section-order-3 {
+  order: 3;
+}
+
+.card img {
+  width: 75%;
+  border-radius: 100%;
+}
+
+.footer-logo {
+  width: 0.75em;
+  border-radius: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flex-column-space-small {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.flex-column-space-large {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.buttom {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 4px;
+  border: 2px solid black;
+  background-color: #242730;
+  color: #22cd5b;
+  width: 60px;
+}
+
+.flex-div-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  height: 45px;
+  border-radius: 100%;
+}
+
+.nav-text {
+  display: none;
+}
+
+.min-content-card {
+  width: min-content;
+  padding: 1em;
+}
+
+/* TABLET @@@@ */
+@media screen and (min-width: 40em) {
+  /* 40em = 640px */
+  .layout-item-main {
+    gap: 3em;
+  }
+
+  .card img {
+    width: 50%;
+  }
+
+  .card a {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-icon {
+    /* height: 50px; */
+    display: none;
+  }
+
+  .nav-text {
+    display: block;
+  }
+
+  nav ul li {
+    border-left: 1px solid #20bf55;
+    border-right: 1px solid #20bf55;
+  }
+
+  section {
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.min-content-card {
+  width: fit-content;
+}
+
+/* DESKTOP @@@@ */
+@media screen and (min-width: 67em) {
+  /* 64em = 1024px */
+  /* TAG DECORATORS */
+
+  section {
+    flex-direction: column;
+    /* width: min-content; */
+  }
+
+  nav {
+    position: fixed;
+    top: 3.5px;
+    left: 30%;
+    max-height: 54px;
+    width: 600px;
+    /* font-size: medium; */
+  }
+
+  nav ul li {
+    border: none;
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    margin-bottom: 0;
+  }
+
+  section ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* CLASS DECORATORS */
+  .min-content-card {
+    width: min-content;
+  }
+
+  .main-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .section-order-1 {
+    order: 2;
+  }
+
+  .section-order-2 {
+    order: 1;
+  }
+
+  .section-order-3 {
+    order: 3;
+  }
+
+  .card img {
+    width: 75%;
+  }
+
+  .card a {
+    display: flex;
+    flex-direction: column;
+  }
+}

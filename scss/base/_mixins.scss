@@ -1,0 +1,16 @@
+@mixin adjust-content($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin min-width {
+  width: 50%;
+}
+
+@mixin max-width {
+  width: 100%;
+}
+
+@mixin max-height {
+  height: 100%;
+}

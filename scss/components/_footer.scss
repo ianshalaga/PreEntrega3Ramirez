@@ -1,0 +1,25 @@
+footer {
+  background-color: $color-ss-dark;
+  padding-bottom: 70px;
+
+  a {
+    color: $color-ss-white;
+    text-decoration: none;
+  }
+
+  p {
+    font-size: smaller;
+  }
+
+  /* @@@@ MEDIA QUERY DESKTOP */
+  @media screen and (min-width: 992px) {
+    padding-bottom: 0;
+  }
+}
+
+.footer-img {
+  img {
+    width: 0.75em;
+    border-radius: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+header {
+  background-color: $color-ss-dark;
+}
+
+.header-height {
+  height: 70px;
+}
+
+.header-img {
+  img {
+    width: 25px;
+    transition: 0.5s;
+
+    &:hover {
+      width: 30px;
+    }
+
+    /* @@@@ MEDIA QUERY SMALL TABLET */
+    @media screen and (min-width: 576px) {
+      width: 35px;
+
+      &:hover {
+        width: 40px;
+      }
+    }
+  }
+}
+
+.header-logo {
+  img {
+    transition: 0.5s;
+
+    &:hover {
+      width: 50px;
+    }
+  }
+}

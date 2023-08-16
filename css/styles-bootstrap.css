@@ -1,0 +1,287 @@
+/* This CSS is designed with the design pattern mobile first */
+
+/* @@@@ FONT */
+@font-face {
+  font-family: "Gontserrat medium";
+  src: url(../assets/fonts/Gontserrat-Medium.ttf);
+}
+
+/* @@@@ RESET */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #20bf55;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Gontserrat medium";
+}
+
+/* @@@@ TAG DECORATORS */
+body {
+  background-color: #a52422;
+  background-image: url(../assets/images/background.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  height: 100%;
+}
+
+main {
+  padding-top: 70px;
+  min-height: 80vh;
+}
+
+section {
+  width: 90%;
+  background-color: #242730;
+}
+
+header,
+nav,
+footer {
+  background-color: #242730;
+}
+
+footer {
+  padding-bottom: 70px;
+}
+
+footer a {
+  color: bisque;
+  margin: 0;
+}
+
+footer p {
+  font-size: smaller;
+}
+
+a {
+  color: #20bf55;
+  text-decoration: none;
+}
+
+img {
+  width: 45px;
+  object-fit: contain;
+}
+
+strong {
+  color: bisque;
+}
+
+/* @@@@ CLASS DECORATORS */
+/* Global */
+.fit-content {
+  width: fit-content;
+  height: fit-content;
+}
+
+.mid-width {
+  width: 50%;
+}
+
+.max-width {
+  width: 100%;
+}
+
+.max-width li {
+  width: 100%;
+}
+
+.max-height {
+  height: 100%;
+}
+
+.max-height li {
+  height: 100%;
+}
+
+.border-green {
+  border: 1px solid #20bf55;
+}
+
+.border-tb-green {
+  border-top: 1px solid #20bf55;
+  border-bottom: 1px solid #20bf55;
+}
+
+.page-title {
+  color: bisque;
+}
+
+/* Main */
+.main-img img {
+  border-radius: 100%;
+}
+
+/* Header */
+.header-height {
+  height: 70px;
+}
+
+.header-img img {
+  width: 25px;
+  transition: 0.5s;
+}
+
+.header-img img:hover {
+  width: 30px;
+}
+
+.header-logo img {
+  transition: 0.5s;
+}
+
+.header-logo img:hover {
+  width: 50px;
+}
+
+/* Section */
+.section-hover section {
+  transition: 0.5s;
+}
+
+.section-hover section:hover {
+  background-color: #434859;
+}
+
+/* Nav */
+.nav-img img {
+  transition: 0.5s;
+}
+
+.nav-img img:hover {
+  background-color: #20bf55;
+  width: 54px;
+  padding: 2px;
+}
+
+.nav-icon {
+  width: 45px;
+  border-radius: 100%;
+}
+
+.nav-text {
+  display: none;
+}
+
+.nav-height {
+  height: 70px;
+}
+
+.nav-border li {
+  border-left: 0;
+  border-right: 0;
+}
+
+.nav-position {
+  bottom: 0;
+}
+
+/* Footer */
+.footer-img img {
+  width: 0.75em;
+  border-radius: 100%;
+}
+
+/* @@@@ MEDIA QUERY SMALL TABLET */
+@media screen and (min-width: 576px) {
+  /* Header */
+  .header-img img {
+    width: 35px;
+    transition: 0.5s;
+  }
+
+  .header-img img:hover {
+    width: 40px;
+  }
+
+  /* Nav */
+  .nav-icon {
+    display: None;
+  }
+
+  .nav-text {
+    display: flex;
+    margin: 0;
+    font-size: small;
+    transition: 0.5s;
+  }
+
+  .nav-text:hover {
+    color: white;
+  }
+
+  .nav-hover li:hover {
+    background-color: #434859;
+  }
+
+  .nav-border li {
+    border-left: 1px solid #20bf55;
+    border-right: 1px solid #20bf55;
+  }
+
+  /* Main */
+  .main-img img {
+    width: 50%;
+  }
+}
+
+/* @@@@ MEDIA QUERY LARGE TABLET */
+@media screen and (min-width: 768px) {
+  /* Nav */
+  .nav-text {
+    font-size: medium;
+  }
+}
+
+/* @@@@ MEDIA QUERY DESKTOP */
+@media screen and (min-width: 992px) {
+  /* Tags */
+  footer {
+    padding-bottom: 0;
+  }
+
+  /* Global */
+  .max-width li {
+    width: fit-content;
+  }
+
+  /* Nav */
+  .nav-position {
+    top: 0;
+    width: 50%;
+    left: 37%;
+  }
+
+  .nav-text {
+    font-size: small;
+  }
+
+  .nav-border li {
+    border: none;
+  }
+
+  .nav-hover li:hover {
+    background-color: #242730;
+  }
+
+  /* Main */
+  .main-img img {
+    width: 85%;
+  }
+
+  .cards section {
+    height: 35em;
+  }
+
+  main {
+    /* padding-top: 70px; */
+    min-height: 91.5vh;
+  }
+
+  .min-content {
+    width: min-content;
+  }
+}

@@ -1,0 +1,15 @@
+/* This CSS is designed with the design pattern mobile first */
+
+// Base
+@import "./base/variables";
+@import "./base/reset";
+@import "./base/mixins";
+@import "./base/utilities";
+
+// Components
+@import "./components/header";
+@import "./components/nav";
+@import "./components/footer";
+
+// Layout
+@import "./layout/index";
