@@ -3,7 +3,8 @@
 }
 
 .min-content {
-  @include adjust-content(fit-content, _);
+  // @include adjust-content(fit-content, _);
+  width: fit-content;
 }
 
 .min-width {

@@ -8,8 +8,9 @@ nav {
 
     &:hover {
       background-color: $color-ss-green;
-      width: 54px;
+      // width: 54px;
       padding: 2px;
+      transform: scale(1.01);
     }
   }
 }

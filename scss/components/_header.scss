@@ -1,5 +1,6 @@
 header {
-  background-color: $color-ss-dark;
+  // background-color: $color-ss-dark;
+  background: linear-gradient(to right, $color-ss-dark, $color-ss-dark-hover);
 }
 
 .header-height {
@@ -12,7 +13,8 @@ header {
     transition: 0.5s;
 
     &:hover {
-      width: 30px;
+      // width: 30px;
+      transform: scale(1.01);
     }
   }
 }
@@ -28,7 +30,8 @@ header {
     transition: 0.5s;
 
     &:hover {
-      width: 35px;
+      // width: 35px;
+      transform: scale(1.03);
     }
   }
 }
